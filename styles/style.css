@@ -1,6 +1,6 @@
 .dropbtn {
   padding: 16px;
-
+color: #2391ca;
   border: none;
   cursor: pointer;
 }
@@ -35,7 +35,7 @@
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+  background-color: #dbdfdb;
 }
 
 .myCarousel {
@@ -244,49 +244,60 @@
       border-radius: 10px;
   }
   
-div.gallery {
-    border: 1px solid #ccc;
+
+
+  .card-block {
+    min-height: 300px;
   }
   
-  div.gallery:hover {
-    border: 1px solid #777;
+  .card1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    
   }
-  
-  div.gallery img {
-    width: 100%;
-    height: auto;
+  .card1 > hr {
+    margin-right: 0;
+    margin-left: 0;
   }
-  
-  div.desc {
-    padding: 15px;
+  .card1 > .list-group {
+    border-top: inherit;
+    border-bottom: inherit;
+  }
+  .card1 > .list-group:first-child {
+    border-top-width: 0;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+    border-radius: 5px;
+  }
+  .card1 > .list-group:last-child {
+    border-bottom-width: 0;
+    border-bottom-right-radius: calc(0.25rem - 1px);
+    border-bottom-left-radius: calc(0.25rem - 1px);
+    border-radius: 5px;
+  }
+  .card1 > .card-header + .list-group,
+  .card1 > .list-group + .card-footer {
+    border-top: 0;
+  }
+ 
+  .card-title1 {
+    margin-bottom: 0.5rem;
     text-align: center;
   }
-  
-  * {
-    box-sizing: border-box;
+  .card-subtitle {
+    margin-top: -0.25rem;
+    margin-bottom: 0;
+    text-align: justify;
   }
-  
-  .responsive {
-    padding: 0 6px;
-    float: left;
-    width: 24.99999%;
+  .card-text:last-child {
+    margin-bottom: 0;
   }
-  
-  @media only screen and (max-width: 700px) {
-    .responsive {
-      width: 49.99999%;
-      margin: 6px 0;
-    }
-  }
-  
-  @media only screen and (max-width: 500px) {
-    .responsive {
-      width: 100%;
-    }
-  }
-  
-  .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
+  .card-link:hover {
+    text-decoration: none;
+    color: blue;
   }
