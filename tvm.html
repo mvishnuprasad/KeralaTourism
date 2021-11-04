@@ -11,17 +11,41 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+<style>
+    div.gallery {
+      margin: 5px;
+      border: 1px solid #ccc;
+      float: left;
+      width: 275px;
+    }
+    
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
+    
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+    
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+
 </head>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-
-
+<body>
 
     <div class="nav">
         <nav class="navbar">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#">Kerala</a>
+                    <a class="navbar-brand" href="#">Kerala Tourism</a>
                 </div>
 
                 <ul class="nav navbar-nav navbar-right">
@@ -43,8 +67,8 @@
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Profile <span
                                 class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Sign In</a></li>
-                            <li><a href="#">Sign Up </a></li>
+                            <li><a href="signin.html" target="_blank">Sign In</a></li>
+                            <li><a href="signup.html" target="_blank">Sign Up </a></li>
                             <li><a href="#">Guest</a></li>
                             <li><a href="#"> Settings</a></li>
                         </ul>
@@ -96,14 +120,52 @@
             adorned with carved horses and displaying collections related to the Travancore 
             royal family, whose regional capital was here from the 18th–20th centuries.
         </p>
-        <br><br>
+
+        <br>
+        <p>
+
+            The district has three major rivers, several freshwater lakes, and over 300 ponds. Its eastern region is forested, northern regions are mostly under rubber cultivation and the remaining areas grow mixed dry-land crops of coconut, plantain, and tapioca, among others. Built-up areas and rice fields complete the land use pattern
+        </p>
+
+
+        
 
     </div>
 
-<br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br>
+<div class="container">
 
+    <div class="gallery">
+        <a target="_blank" href="img_5terre.jpg">
+          <img src="img/tvm/a.png" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc">PonMudi</div>
+      </div>
 
+      <div class="gallery">
+        <a target="_blank" href="img_5terre.jpg">
+          <img src="img/tvm/b.png" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc">Padmanabha Swamy</div>
+      </div>
 
+      <div class="gallery">
+        <a target="_blank" href="img_5terre.jpg">
+          <img src="img/tvm/c.png" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc">Museum</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="img_5terre.jpg">
+          <img src="img/tvm/d.png" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc">Kovalam</div>
+      </div>
+    
+
+</div>
+  <br><br><br><br>
     <div id="footer">
 
 

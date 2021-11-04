@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sign Up</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles\style.css" />
+
+    <link rel="icon" href="img\title.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+<style>
+    div.gallery {
+      margin: 5px;
+      border: 1px solid #ccc;
+      float: left;
+      width: 275px;
+    }
+    
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
+    
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+    
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+
+
+    * {box-sizing: border-box}
+
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  border-radius:10px;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+button {
+  background-color: #4a47fa;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 10%;
+  border-radius: 5px;
+  margin: 2px;
+}
+
+.container {
+  padding: 16px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+
+</head>
+
+<body>
+
+    <div class="nav">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Kerala Tourism</a>
+                </div>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#">The Legacy</a></li>
+                    <li><a href="Districts.html" target="_blank">Explore Districts</a></li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Services <span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Accomodations</a></li>
+                            <li><a href="#">Book a Guide</a></li>
+                            <li><a href="#">Book a Stay</a></li>
+                            <li><a href="#">Trip Planner</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Profile <span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="signin.html" target="_blank">Sign In</a></li>
+                            <li><a href="signup.html" target="_blank">Sign Up </a></li>
+                            <li><a href="#">Guest</a></li>
+                            <li><a href="#"> Settings</a></li>
+                        </ul>
+                    </li>
+                    
+
+                  
+
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+  <div id ="form">
+    <form action="action_page.php" style="border:1px solid #ccc">
+        <div class="container">
+          <h1>Sign Up</h1>
+          <p>Please fill in this form to create an account.</p>
+          <hr>
+      
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+      
+          <label for="psw-repeat"><b>Repeat Password</b></label>
+          <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+          <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+          </label>
+      
+          <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+      
+          <div class="clearfix">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <button type="submit" class="signupbtn">Sign Up</button>
+          </div>
+        </div>
+      </form>
+
+
+  </div>
+
+
+    <div id="footer">
+
+
+        <footer class="text-center text-white" style="background-color: #c9d0f5">
+
+            <div class="container">
+
+                <section class="mt-5">
+
+                    <div class="row text-center d-flex justify-content-center pt-5">
+
+                        <div class="col-md-2">
+                            <h6 class="tftext">
+                                <a href="#!" class="text-white">About us</a>
+                            </h6>
+                        </div>
+
+                        <div class="col-md-2">
+                            <h6 class="tftext">
+                                <a href="#!" class="text-white">Kerala Govt</a>
+                            </h6>
+                        </div>
+
+                        <div class="col-md-2">
+                            <h6 class="tftext">
+                                <a href="#!" class="text-white">Awards</a>
+                            </h6>
+                        </div>
+
+                        <div class="col-md-2">
+                            <h6 class="tftext">
+                                <a href="#!" class="text-white">Help</a>
+                            </h6>
+                        </div>
+
+                        <div class="col-md-2">
+                            <h6 class="tftext">
+                                <a href="#!" class="text-white">Contact</a>
+                            </h6>
+                        </div>
+                        <div class="col-md-2">
+                            <h6 class="tftext">
+                                <a href="#!" class="text-white">Report a COmplaint</a>
+                            </h6>
+                        </div>
+
+
+                    </div>
+
+                </section>
+
+
+                <hr class="my-5" />
+
+                <section class="mb-5">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-12">
+                            <p>
+                                Department of Tourism, Government of Kerala, Park View, Thiruvananthapuram, Kerala,
+                                India - 695 033
+                                Phone: +91 471 2321132, Fax: +91 471 2322279, E-mail: info@keralatourism.org.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="text-center mb-5">
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+
+                </section>
+
+            </div>
+
+
+
+
+
+        </footer>
+
+
+
+    </div>
+
+
+
+
+
+    </body>
+
+</html>
+
+
+
